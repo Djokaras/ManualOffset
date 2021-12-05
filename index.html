@@ -65,7 +65,7 @@
 			</section>
 			<section class="result">
 				<p class="total" id="total">0</p>
-				<button onclick="clipCopy()">
+				<button onclick="clipCopy()" class="clip-copy">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6"
@@ -81,6 +81,7 @@
 						/>
 					</svg>
 				</button>
+				<div class="message">Copy to clipboard</div>
 				<button onclick="reset()">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +98,7 @@
 						/>
 					</svg>
 				</button>
+				<div class="message-reset">Reset</div>
 			</section>
 		</main>
 		<script src="script.js"></script>

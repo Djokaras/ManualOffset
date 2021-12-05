@@ -66,6 +66,15 @@ input {
 	text-align: right;
 	font-size: 1.5rem;
 	max-width: 10rem;
+	transition: all 0.15s ease-in-out;
+}
+
+input:hover {
+	border: 2px solid #00bcdd;
+}
+
+input:focus {
+	outline: 3px solid #00bcdd;
 }
 
 .result {
@@ -73,6 +82,7 @@ input {
 	justify-content: center;
 	gap: 1rem;
 	align-items: center;
+	transition: all 0.15s ease-in-out;
 }
 
 .total {
@@ -100,4 +110,32 @@ button:hover {
 
 svg {
 	width: 35px;
+}
+
+.message,
+.message-reset {
+	display: none;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	background-color: #263238;
+	border: 1px solid #586278;
+	position: absolute;
+	font-size: 1.2rem;
+	bottom: -20px;
+}
+
+.message {
+	right: 41.5%;
+}
+
+.message-reset {
+	right: 39.2%;
+}
+
+button:hover + .message {
+	display: block;
+}
+
+button:hover + .message-reset {
+	display: block;
 }

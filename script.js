@@ -5,6 +5,8 @@ let slaveHr = document.getElementById(`slave-hr`);
 let slaveMin = document.getElementById(`slave-min`);
 let slaveSec = document.getElementById(`slave-sec`);
 
+let clipMessage = document.querySelector(`.message`);
+
 let resultTotal = document.querySelector(`.total`);
 
 function calculate() {
@@ -34,6 +36,8 @@ function clipCopy() {
 
 	// /* Copy the text inside the text field */
 	navigator.clipboard.writeText(copyText);
+
+	// clipMessage.innerHTML = `Copied to clipboard`;
 }
 
 function reset() {
