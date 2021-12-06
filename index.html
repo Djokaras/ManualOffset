@@ -64,8 +64,13 @@
 				</article>
 			</section>
 			<section class="result">
+				<p class="label">Offset:</p>
 				<p class="total" id="total">0</p>
-				<button onclick="clipCopy()" class="clip-copy">
+				<button
+					onclick="clipCopy()"
+					onmouseleave="msgReset()"
+					class="clip-copy"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6"

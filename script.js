@@ -37,7 +37,7 @@ function clipCopy() {
 	// /* Copy the text inside the text field */
 	navigator.clipboard.writeText(copyText);
 
-	// clipMessage.innerHTML = `Copied to clipboard`;
+	clipMessage.innerHTML = `Copied to clipboard`;
 }
 
 function reset() {
@@ -48,4 +48,8 @@ function reset() {
 	slaveMin.value = ``;
 	slaveSec.value = ``;
 	resultTotal.innerHTML = 0;
+}
+
+function msgReset() {
+	clipMessage.innerHTML = `Copy to clipboard`;
 }
