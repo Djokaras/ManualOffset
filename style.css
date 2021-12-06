@@ -122,7 +122,17 @@ svg {
 	width: 35px;
 }
 
-.message,
+.message{
+	display: none;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	background-color: #263238;
+	border: 1px solid #586278;
+	position: absolute;
+	font-size: 1.2rem;
+	bottom: -20px;
+}
+
 .message-reset {
 	display: none;
 	border-radius: 5px;
